@@ -1,0 +1,22 @@
+@TemporalTables_HostAddress = http://localhost:5260
+
+GET {{TemporalTables_HostAddress}}/user/1
+Accept: application/json
+
+###
+
+GET {{TemporalTables_HostAddress}}/user/1?timestamp=2024-05-16T14:18:48
+Accept: application/json
+
+###
+
+
+PUT {{TemporalTables_HostAddress}}/user/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "tomsi",
+  "birthday": "2020-01-01T15:20:00"
+}
+###
