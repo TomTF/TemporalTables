@@ -1,10 +1,9 @@
 ﻿namespace TemporalTables.Domain
 {
-    public class User
+    public class Hobby
     {
         public int Id { get; set; }
         public required string Name { get; set; }
-        public DateTime Birthday { get; set; }
-        public required ICollection<Hobby> Hobbies { get; set; }
+        public ICollection<User>? Users { get; set; }
     }
 }
